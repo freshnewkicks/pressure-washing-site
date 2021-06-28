@@ -181,7 +181,7 @@ nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     height: auto;
 }
@@ -208,7 +208,7 @@ nav {
 }
 
 .logo {
-    height: 150px;
+    height: 100px;
 }
 
 .links a {
@@ -263,9 +263,9 @@ nav {
 
 .banner #title {
     display: block;
-    width: 100%;
+    width: 100vw;
     position: relative;
-    top: 230px;
+    top: 160px;
     left: 0;
     right: 0;
     white-space: nowrap;
@@ -275,7 +275,7 @@ nav {
     color: rgb(19, 1, 1);
     text-align: center;
     position: relative;
-    font-size: 48px;
+    font-size: 6vw;
 }
 
 .banner #title sub {
@@ -350,6 +350,7 @@ nav {
     grid-template-rows: 1fr;
     gap: 0px 0px;
     margin-top: 5%;
+    width: 100%;
 }
 
 .grid .item-one,
