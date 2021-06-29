@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
     <!-- styles -->
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -29,13 +30,16 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#item-three">Get A Free Quote</a>
+                    <a href="#quote">Get A Free Quote</a>
+                </li>
+                <li>
+
                 </li>
             </ul>
             <!-- social media -->
@@ -74,26 +78,70 @@
             <img src="https://images.unsplash.com/photo-1605146768851-eda79da39897?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="House With Nice Driveway">
         </div>
     </div>
-    <div class="divider" id="section">
+    <div class="divider" id="about">
         <h1>About Us</h1>
         <div class="borderline"></div>
-        <div class="grid">
-            <div id="item-one">
+        <div class="grid" id="services">
+            <div id="item-one"><img src="https://img.icons8.com/ios-glyphs/30/000000/pressure.png" />
                 <p>Panhandle Pressure Washing operates within the Eastern Panhandle, offering premium pressure washing services to the surrounding areas.</p>
             </div>
-            <div id="item-two">
-                <p>We offer competitive pricing, and our easy-to-use quote application will price your estimate in seconds! No phone calls, no fees, no hassle, all convenience.</p>
+            <div id="item-two"><img src="https://img.icons8.com/ios-glyphs/30/000000/price-comparison.png" />
+                <p>We offer competitive pricing, and our easy-to-use quote application will price your estimate in seconds! And if you find a better price at a competitor, we will match it! No phone calls, no fees, no hassle, all convenience.</p>
             </div>
-            <div id="item-three">
+            <div id="item-three"><img src="https://img.icons8.com/ios-glyphs/30/000000/guarantee--v2.png" />
                 <p>Our lifetime guarantee insures all of our work. If you aren't satisfied with our quality of work, we will come back out and fix our mistakes free of charge; for life!</p>
+            </div>
+        </div>
+        <h1>Services</h1>
+        <div class="borderline"></div>
+        <div class="grid">
+            <div id="item-one"><img src="https://img.icons8.com/ios-glyphs/30/000000/scuba-pressure-gauge.png" />
+                <p>Panhandle Pressure offers premium pressure washing services; decks, roofs, gutters, driveways and more.</p>
+            </div>
+            <div id="item-two"><img src="https://img.icons8.com/ios-glyphs/30/000000/education.png" />
+                <p>We understand the homeowner may want to purchase their own power washing unit. For no additional fee we can educate the homeowner on best power washing practices.</p>
+            </div>
+            <div id="item-three"><img src="https://img.icons8.com/ios-glyphs/30/000000/deciduous-tree.png" />
+                <p>We offer cleaning services for an additional fee. Leaf removal, small tree and branch removal, and even minor trash removal. Let us work around your busy life!</p>
+            </div>
+        </div>
+        <h1 id="quote">Get Your Free Quote Now!</h1>
+        <div class="borderline"></div>
+        <div class="quoter">
+            <div class="sqft">
+                <h4><img src="https://img.icons8.com/ios-glyphs/30/000000/estimate.png" />Enter the size of your house in square feet:</h4>
+                <input type="number" class="number" min=0 max=9000>
+            </div>
+            <div>
+                <p id="estimateinfo">
+                    Your free estimate:
+                </p>
+            </div>
+            <div class="total">
+                $ 0
             </div>
         </div>
     </div>
 
+    <footer id="footer">
+        <div id="grid-footer">
+            <div id="item-one">
+            </div>
+            <div id="item-two">
+                <sub>&copy; 2021</sub>
+            </div>
+            <div id="item-three">
+                <h5>Built with &hearts;</h5>
+                <sub>
+                    <a href="mailto:tylerdukedev@gmail.com">By Tyler Duke Designs</a>
+                </sub>
+            </div>
+        </div>
+    </footer>
+
 
 
     <!-- javascript -->
-    <script src="app.js"></script>
 </body>
 
 </html>

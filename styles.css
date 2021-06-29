@@ -1,7 +1,6 @@
 /*
 =============== 
 Fonts
-Etc
 ===============
 */
 
@@ -180,7 +179,7 @@ Navbar
 
 nav {
     background: var(--clr-white);
-    box-shadow: var(--light-shadow);
+    box-shadow: 0px 1px 20px 5px;
     position: fixed;
     width: 100vw;
     z-index: 1;
@@ -285,6 +284,7 @@ nav {
     position: relative;
     text-align: center;
     font-weight: 700;
+    font-size: 0.9;
 }
 
 .banner img {
@@ -299,12 +299,14 @@ nav {
     flex-direction: column;
     background: #ffffff;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
+    bottom: 100%;
 }
 
 .divider h1 {
     display: flex;
+    margin-top: 5%;
     font-size: 3vw;
     justify-content: center;
 }
@@ -348,7 +350,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    margin-top: 5%;
+    margin-top: 10px;
 }
 
 .grid #item-one,
@@ -357,6 +359,74 @@ nav {
     width: 100%;
     font-size: 1.5vw;
     padding: 25px;
+}
+
+.grid #item-one,
+.grid #item-two {
+    border-right: 2px solid #000;
+}
+
+
+/* footer */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    padding: 15px 0px 15px 0px;
+    background: rgb(197, 197, 197);
+    color: #000;
+}
+
+#footer p {
+    color: black;
+}
+
+#grid-footer {
+    display: grid;
+    place-items: center center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+.quoter {
+    display: grid;
+    margin-top: 2%;
+    font-size: 1.5rem;
+    place-items: center center;
+}
+
+.quoter .sqft {
+    display: grid;
+    place-items: center center;
+}
+
+.quoter .sqft h4 {
+    padding-bottom: 5px;
+}
+
+.quoter .sqft input {
+    padding-bottom: 2px;
+    width: 50%;
+    height: 150%;
+}
+
+.quoter .sqft img {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.quoter #estimateinfo {
+    padding-top: 25px;
+}
+
+.quoter .total {
+    font-size: 48px;
 }
 
 @media screen and (min-width: 800px) {
@@ -412,6 +482,26 @@ nav {
         width: 100%;
         font-size: 3vw;
         padding: 25px;
+    }
+    #footer {
+        display: inline-flex;
+        background: rgb(197, 197, 197);
+        color: #000;
+    }
+    #footer p {
+        color: black;
+    }
+    #grid-footer {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+    }
+    #grid-footer #item-one,
+    #grid-footer #item-two,
+    #grid-footer #item-three {
+        font-size: 3vw;
     }
     .divider .borderline {
         width: 80px;
